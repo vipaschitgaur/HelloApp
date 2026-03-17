@@ -1,3 +1,22 @@
+# Java compiled output
 *.class
-.gitattributes
-.gitignore
+
+# Common build folders
+bin/
+out/
+target/
+build/
+
+# IDE/project files
+.vscode/
+.idea/
+*.iml
+.classpath
+.project
+.settings/
+
+# OS junk
+.DS_Store
+
+# Logs
+*.log
