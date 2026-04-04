@@ -5,14 +5,14 @@ public class HelloApp {
         boolean first = true;
 
         for (String name : args) {
-            if (!first) {
-                nameBuilder. append (", ");}
             nameBuilder.append (name);
-            first = false;
+            nameBuilder.append (", ");
         }
+
         if (nameBuilder.length() == 0) {
             nameBuilder.append("World");
         }
-        System.out.println("Hello, " + nameBuilder.toString() + "!");
+        String names = nameBuilder.substring(0, nameBuilder.length() - 2);
+        System.out.println("Hello, " + names + "!");
 }
 }
